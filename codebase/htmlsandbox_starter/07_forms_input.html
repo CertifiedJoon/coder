@@ -9,13 +9,16 @@
 <body>
   <form action="process.py">
     <div>
-      <label for="name">Name</label><br> <!-- when label matches the id of input its nice try it-->
-      <input type="text" id="name" name="name"> <!--name of input field is used by the server side to use this input-->
+      <!-- when label matches the id of input its nice try it-->
+      <label for="name">Name</label><br> 
+      <!--name of input field is used by the server side to use this input-->
+      <input type="text" id="name" name="name"> 
     </div>
     <hr>
     <div>
       <label for="email">Email</label><br>
-      <input type="email" id="email" name="email"> <!--using type allows client side validation -->
+      <!--using type allows client side validation -->
+      <input type="email" id="email" name="email" placeholder="Enter an email"> 
     </div>
     <hr>
     <div>
@@ -25,11 +28,38 @@
     <div>
       <label for="sex">Sex</label>
       <select name="sex" id="sex">
-        <option value="male">Male</option>
+        <!-- using selected in select gives the user the default option -->
+        <option value="male" selected>Male</option>
         <option value="male">Female</option>
         <option value="male">Other</option>
       </select>
     </div>
+    <div>
+      <label for="age">Age</label>
+      <input type="number" name="age" id="age">
+    </div>
+    <div>
+      <label for="birthdate">Birthdate</label>
+      <input type="date" id="birthdate" name="birthdate">
+    </div>
+    <div>
+      <label for="membership">Membership</label>
+      <input type="radio" id="membership" name="membership" value="simple"> Simple
+      <!-- Using checked in radio = predetermined value --> 
+      <input type="radio" id="membership" name="membership" value="standard" checked> Standard
+      <input type="radio" id="membership" name="membership" value="super"> Super
+    </div>
+    <div>
+      <label for="likes">Likes</label>
+      <input type="checkbox" id="likes" name="likes" value="bike"> bike
+      <!-- Using checked in radio = predetermined value --> 
+      <input type="checkbox" id="likes" name="likes" value="cycle" checked> cycle
+      <input type="checkbox" id="likes" name="likes" value="ringdong"> ringdong
+    </div>
+    <!-- two below are the same thing -->
+    <!-- <input type="submit" value="Submit"> -->
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
   </form>
 </body>
 </html>
