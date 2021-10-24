@@ -5,28 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Form Styling</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Raleway"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>
       * {
         /* 
         -May want to add "border-box for "box-sizing so padding does not affect width
         -Reset margin and padding 
        */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
 
       body {
         /* 
           -Background color is #344a72
         */
+        background-color: #344a72;
       }
 
       a {
         /* 
         Underlined links are ugly :)
        */
+        text-decoration: none;
       }
 
       #container {
@@ -35,12 +39,20 @@
         -I would also set a "max-width" for responsiveness
         -May want to add some padding
         */
+        
+        margin: auto;
+        max-width: 400px;
+        padding: 60px 20px;
       }
 
       .form-wrap {
         /* 
           This is the white area around the form and heading, etc
         */
+        padding: 20px 20px 0px 20px;
+        border: 1px #ccc solid;
+        border-radius: 1px;
+        background-color: white;
       }
 
       .form-wrap h1,
@@ -48,6 +60,9 @@
         /* 
           May want to center these
         */
+        font-family: "Raleway";
+        text-align: center;
+        padding: 10px;
       }
 
       .form-wrap .form-group {
@@ -60,12 +75,20 @@
         /* 
           Label should be turned into a block element
         */
+        font-family: "Raleway", sans-serif;
+        display: block;
+        padding: 5px 0px;
       }
 
       .form-wrap .form-group input {
         /* 
           Inputs should reach accross the .form-wrap 100% and have some padding
         */
+        width: 100%;
+        padding: 10px;
+        border: 1px #ccc solid;
+        border-radius: 5px;
+        margin-bottom: 12px;
       }
 
       .form-wrap button {
@@ -73,30 +96,49 @@
           Button should wrap accross 100% and display as block
           Background color for button is #49c1a2
         */
+        font-family: "Raleway", sans-serif;
+        font-weight: bold;
+        color: white;
+        padding: 7px;
+        display: block;
+        width: 100%;
+        background-color: #49c1a2;
+        border: 1px #ccc solid;
+        border-radius: 5px;
       }
 
       .form-wrap button:hover {
         /* 
           Hover background color for button is #37a08e
         */
+        background-color: #37a08e;
       }
 
       .form-wrap .bottom-text {
         /* 
           Bottom text is smaller
         */
+        font-family: "Raleway", sans-serif;
+        font-size: 12px;
+        padding: 20px;
       }
 
       footer {
         /* 
         Should be centered
        */
+        font-family: "Raleway", sans-serif;
+        text-align: center;
+        text-emphasis: bold;
+        color: white;
+        margin-top: 10px;
       }
 
       footer a {
         /* 
           Footer link color is #49c1a2
         */
+        color: #49c1a2;
       }
     </style>
   </head>
