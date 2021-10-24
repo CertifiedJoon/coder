@@ -2,14 +2,47 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Box Model / Margin & Padding</title>
+  <title>Box Model, Margin and Padding</title>
   <style>
+    /* CSS Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      /* div size doesnt change */
+      /* box-sizing: border-box; */
+    }
     
+    .box {
+      background: #f4f4f4;
+      border: 2px solid blue;
+      width: 500px;
+      /* Padding on all sides (Paddin gis inside Box model)*/
+      padding: 20px;
+      /* Padding per side */
+      padding: 10px 20px 10px 20px;
+      /* Padding shorthand padding: top&bottom left&right*/
+      padding: 10px 20px;
+      /* Margin on all sides (margin is outside box model)*/
+      margin: 20px;
+      /* Margin per side */
+      margin: 10px 20px 10px 20px;
+    }
+    
+    .box p {
+      margin: 0;
+    }
   </style>
 </head>
 <body>
-  
+  <div class="box">
+    <h2>Box One</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cupiditate facere illo, odit officia eaque mollitia quaerat dolorum voluptatum qui nesciunt vero! Atque harum non aut tenetur iste numquam eos, tempore quae cum, consequuntur dolorem nam saepe porro odit quis!</p>
+  </div>
+  <div class="box">
+    <h2>Box Two</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita cupiditate facere illo, odit officia eaque mollitia quaerat dolorum voluptatum qui nesciunt vero! Atque harum non aut tenetur iste numquam eos, tempore quae cum, consequuntur dolorem nam saepe porro odit quis!</p>
+  </div>
 </body>
 </html>

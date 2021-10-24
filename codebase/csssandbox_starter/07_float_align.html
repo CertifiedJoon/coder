@@ -2,14 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Float & Align</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <title>Float and Align</title>
   <style>
+    * {
+      /* padding no longer adds to the width */
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4em;
+    }
+    .container { 
+      /* Using max width allows flexible screen compatiblity */
+      max-width: 960px;
+      margin: 30px auto;
+    } 
+    .box {
+      background: orange;
+      border: 1px solid red;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    .box p {
+      /* align text */
+      text-align: left;
+      /* makes the edge even */
+      text-align: justify;
+    }
     
+    #box-2 {
+      float: left;
+      width: 68%;
+    }
+    
+    .clr {
+      /*clears floating elements above */
+      clear: both;
+    }
+    
+    #box-3 {
+      float: right;
+      width: 30%;
+    }
   </style>
 </head>
 <body>
-  
+  <div class="container">
+    <div id="box-1" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit necessitatibus accusantium dolores quidem velit alias possimus quos numquam vel in?</p>
+    </div>
+    <div id="box-2" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit necessitatibus accusantium dolores quidem velit alias possimus quos numquam vel in?</p>
+    </div>
+    <div id="box-3" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit necessitatibus accusantium dolores quidem velit alias possimus quos numquam vel in?</p>
+    </div>
+    <div class="clr"></div>
+    <div id="box-4" class="box">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit necessitatibus accusantium dolores quidem velit alias possimus quos numquam vel in?</p>
+    </div>
+  </div>
 </body>
 </html>
