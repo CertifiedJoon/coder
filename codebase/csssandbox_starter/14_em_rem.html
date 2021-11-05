@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title> Relative Sizing </title>
+  <style>
+    #box1 {
+      font-size: 20px;
+    }
+    #box1 p {
+      font-size: 1.5em;
+      /* once font size has been determined for the element, em takes reference of the determined value */
+      /* this is not 20, rather 30px */
+      padding: 1em;  
+    }
+    #box1 ul {
+      font-size: 1.2em;
+    }
+    
+    html {
+      font-size: 62.5%;
+    }
+    
+    #box2 h3 {
+      font-size: 2rem;
+    }
+    
+    #box2 p {
+      font-size: 1.6rem;
+      line-height: 1.7rem;
+    }
+  </style>
+</head>
+<body>
+  <div id="box1">
+    <h3>BoxOne</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis quam rem totam beatae velit asperiores, qui, sit veritatis dolor quae.</p>
+    <ul>
+      <li>1</li>
+      <li>2</li>
+      <li>3
+        <ul>
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+        </ul>
+      </li>
+      <li>4</li>
+    </ul>
+  </div>
+  <div id="box2">
+    <h3>BoxTwo</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde quibusdam corporis maxime eaque aspernatur, sequi quidem obcaecati. Asperiores eveniet, minus!</p>
+  </div>
+</body>
+</html>
