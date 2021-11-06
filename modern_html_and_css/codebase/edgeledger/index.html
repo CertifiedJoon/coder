@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="css/utilities.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,7 +21,7 @@
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#cases">Cases</a></li>
-          <li><a href="#blog">blog</a></li>
+          <li><a href="#blog">Blog</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
       </nav>
@@ -90,20 +91,36 @@
       </header>
       <div class="row">
         <div class="column">
-          <img src="img/cases/cases1.jpg" alt="">
-          <img src="img/cases/cases2.jpg" alt="">
+          <a href="img/cases/cases1.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet.">
+            <img src="img/cases/cases1.jpg" alt="">  
+          </a>
+          <a href="img/cases/cases2.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet.">
+            <img src="img/cases/cases2.jpg" alt="">
+          </a>
         </div>
         <div class="column">
-          <img src="img/cases/cases3.jpg" alt="">
-          <img src="img/cases/cases4.jpg" alt="">
+          <a href="img/cases/cases3.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet.">
+            <img src="img/cases/cases3.jpg" alt="">
+          </a>
+          <a href="img/cases/cases4.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet.">
+            <img src="img/cases/cases4.jpg" alt="">
+          </a>
         </div>
         <div class="column">
-          <img src="img/cases/cases5.jpg" alt="">
-          <img src="img/cases/cases6.jpg" alt="">
+          <a href="img/cases/cases5.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet.">
+            <img src="img/cases/cases5.jpg" alt="">
+          </a>
+          <a href="img/cases/cases6.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet.">
+            <img src="img/cases/cases6.jpg" alt="">
+          </a>
         </div>
         <div class="column">
-          <img src="img/cases/cases7.jpg" alt="">
-          <img src="img/cases/cases8.jpg" alt="">
+          <a href="img/cases/cases7.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet.">
+            <img src="img/cases/cases7.jpg" alt="">
+          </a>
+          <a href="img/cases/cases8.jpg" data-lightbox="cases" data-title="Lorem ipsum dolor sit amet.">
+            <img src="img/cases/cases8.jpg" alt="">
+          </a>
         </div>
       </div>
     </section>
@@ -193,17 +210,43 @@
     </div>
     <p>Copyright &copy; 2021 - EdgeLedger</p>
   </footer>
-  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/lightbox.min.js"></script>
   <script>
-    const navbar = document.getElementById('navbar')
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
     
     window.onscroll = function() {
       if(window.pageYOffset > 100) {
-        navbar.classList.remove('top')
+        navbar.classList.remove('top');
+        if (!scrolled){
+          navbar.style.transform = 'translateY(-70px)';
+        }
+        setTimeout(function() {
+          navbar.style.transform = 'translateY(0)';
+        }, 200);
       } else {
-        navbar.classList.add('top')
+        navbar.classList.add('top');
+        scrolled = false;
       }
     }
+    
+    // Smooth Scrolling
+    $('#navbar a, .btn').on('click', function (e) {
+      if (this.hash !== '') {
+        e.preventDefault();
+        
+        const hash = this.hash;
+        
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top - 100,
+          },
+          800
+        );
+      }
+    });
+    
   </script>
 </body>
 </html>

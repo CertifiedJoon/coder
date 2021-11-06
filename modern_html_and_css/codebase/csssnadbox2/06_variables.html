@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    :root {
+      /* CSS Variable */
+      --max-width: 1100px;
+      --primary-color: coral;
+      --secondary-color: teal;
+      --light-color: #f4f5f4;
+    }
+
+    
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+      background: var(--light-color);
+    }
+    
+    header {
+      background: var(--primary-color);
+      color: #fff;
+      text-align: center;
+      border-bottom: 5px var(--secondary-color) solid;
+    }
+    
+    .container {
+      display: flex;
+      margin: auto;
+      max-width: var(--max-width);
+    }
+    
+    .box {
+      background: var(--primary-color);
+      border-bottom: 5px var(--secondary-color) solid;
+      color: #fff;
+      padding: 1rem;
+      margin: 1rem;
+    }
+    
+    .box-1 {
+      flex: 1;
+    }
+    
+    .box-2 {
+      flex: 2;
+    }
+  </style>
+  
+  <title>CSS Variables</title>
+</head>
+<body>
+  <header>
+    <h1>CSS Variables</h1>
+  </header>
+  <div class="container">
+    <div class="box box-1">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi ipsum dicta quia minima voluptate nam beatae soluta commodi, tempore reprehenderit.</p>
+    </div>
+    <div class="box box-2">
+      <h3>Heading</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, provident. Nemo, officiis minima mollitia nihil voluptatum. Voluptate neque possimus eligendi.</p>
+    </div>
+  </div>
+</body>
+</html>

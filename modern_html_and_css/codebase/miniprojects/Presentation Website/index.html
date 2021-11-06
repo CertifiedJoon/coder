@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://kit.fontawesome.com/b3fc56a1c1.js" crossorigin="anonymous"></script>
+  <title>Presentation</title>
+</head>
+<body>
+  <section id="page-1" class="page">
+    <h2>Welcome To My Presentation</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque aut quasi nisi vitae corrupti, beatae quibusdam ad eum id tempora eaque laborum saepe deleniti tenetur fuga obcaecati minus provident debitis reprehenderit. Earum officiis omnis hic debitis minus voluptate non odit dolores vitae saepe, tempora nostrum, animi! Tempora mollitia velit veritatis distinctio quibusdam neque odio eos perferendis? Quaerat iusto aut qui nesciunt, molestiae quisquam unde pariatur libero! Voluptatum quos voluptates provident molestias consectetur laborum aperiam alias, quas et dolor tenetur pariatur architecto excepturi saepe facere optio cum. Assumenda iusto dignissimos facere blanditiis sunt natus harum, eos, autem rerum corporis quisquam voluptatum!</p>
+    <div>
+      <a href="#page-2" class="btn brn-dark">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+    </div>
+  </section>
+  <section id="page-2" class="page">
+    <h2>Page 2</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis natus ullam optio, officiis mollitia nobis delectus tenetur reiciendis error soluta assumenda consequuntur ea asperiores modi ipsa facilis illo maiores in! Quod nulla illo, sequi facere. Vel suscipit magni, repellat, deserunt, accusamus, veritatis maiores ut facilis quibusdam beatae iusto nemo autem ipsam necessitatibus delectus. Laboriosam accusantium earum, ducimus, minima unde delectus. Ea rerum blanditiis molestiae vel aliquid? Est aut corporis illum ducimus enim reiciendis incidunt saepe beatae non deleniti reprehenderit deserunt quasi, voluptas dignissimos, eveniet voluptatem laudantium culpa consectetur minus vitae, suscipit ipsum voluptate nam mollitia! Placeat sunt labore ab nulla.</p>
+    <div>
+      <a href="#page-3" class="btn btn-dark">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+      <a href="#page-1" class="btn">
+        Previous Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+    </div>
+  </section>
+  <section id="page-3" class="page">
+    <h2>Page 3</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium vitae minima soluta facilis numquam amet officia ratione, quis cupiditate! Itaque, impedit, adipisci. Minus deleniti beatae, rem praesentium quisquam, sapiente hic. Odio ab unde saepe vel architecto enim animi quo mollitia dolorum voluptatem laborum modi tempore maiores illum pariatur ipsam, neque, quidem consequuntur itaque blanditiis placeat dignissimos velit id. Voluptatem doloremque, et, tenetur vel commodi recusandae odit libero ratione culpa facilis quibusdam pariatur placeat optio veritatis? Velit reprehenderit veniam earum a perferendis maiores delectus optio repellendus doloribus harum, officia repudiandae itaque amet incidunt atque id, voluptate suscipit maxime dignissimos perspiciatis ea.</p>
+    <div>
+      <a href="#page-4" class="btn btn-dark">
+        Next Page <i class="fas fa-arrow-circle-down"></i>
+      </a>
+      <a href="#page-2" class="btn">
+        Previous Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+    </div>
+  </section>
+  <section id="page-4" class="page">
+    <h2>Page 4</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab eum fuga vel quidem soluta incidunt reiciendis doloremque perferendis, aspernatur, delectus! Dolore autem inventore ullam, in maxime, ducimus hic esse et totam suscipit tempore, laudantium rem, beatae repellendus voluptatum optio deserunt fugit id provident blanditiis nisi quos porro commodi reprehenderit. Neque accusantium qui quae sit sed maiores dolores nisi, vel odit facere, quam minus eos labore fugiat praesentium magni? Unde, debitis architecto suscipit, temporibus modi quas voluptatum aut nisi! Distinctio neque pariatur quo vitae officia adipisci ex eum odio delectus deleniti, illo atque nam dicta, recusandae aperiam, voluptatem est hic sit.</p>
+    <div>
+      <a href="#page-3" class="btn">
+        Previous Page <i class="fas fa-arrow-circle-up"></i>
+      </a>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/lightbox.min.js"></script>
+  <script>
+        // Smooth Scrolling
+    $('.btn').on('click', function (e) {
+      if (this.hash !== '') {
+        e.preventDefault();
+        
+        const hash = this.hash;
+        
+        $('html, body').animate(
+          {
+            scrollTop: $(hash).offset().top,
+          },
+          800
+        );
+      }
+    });
+  </script>
+</body>
+</html>
