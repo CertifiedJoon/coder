@@ -1,0 +1,1289 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '@mui/material',
+1 verbose cli   '@emotion/react',
+1 verbose cli   '@emotion/styled' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData @mui/material
+8 silly fetchPackageMetaData @emotion/react
+9 silly fetchPackageMetaData @emotion/styled
+10 silly fetchNamedPackageData @mui/material
+11 silly mapToRegistry name @mui/material
+12 silly mapToRegistry scope (from package name) @mui
+13 verbose mapToRegistry no registry URL found in name for scope @mui
+14 silly mapToRegistry using default registry
+15 silly mapToRegistry registry https://registry.npmjs.org/
+16 silly mapToRegistry uri https://registry.npmjs.org/@mui%2fmaterial
+17 silly fetchNamedPackageData @emotion/react
+18 silly mapToRegistry name @emotion/react
+19 silly mapToRegistry scope (from package name) @emotion
+20 verbose mapToRegistry no registry URL found in name for scope @emotion
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2freact
+24 silly fetchNamedPackageData @emotion/styled
+25 silly mapToRegistry name @emotion/styled
+26 silly mapToRegistry scope (from package name) @emotion
+27 verbose mapToRegistry no registry URL found in name for scope @emotion
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2fstyled
+31 verbose request uri https://registry.npmjs.org/@mui%2fmaterial
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 1:46:22 PM
+34 verbose request id 7b1fc0a9cd77bf76
+35 verbose etag W/"24ea4cfe90363b417caf99fb19706c75"
+36 verbose lastModified Mon, 17 Jan 2022 22:41:56 GMT
+37 http request GET https://registry.npmjs.org/@mui%2fmaterial
+38 verbose request uri https://registry.npmjs.org/@emotion%2freact
+39 verbose request no auth needed
+40 info attempt registry request try #1 at 1:46:22 PM
+41 verbose etag W/"d5da615e4dab1bf0050b563b1f6dd4a0"
+42 verbose lastModified Sun, 12 Dec 2021 22:28:45 GMT
+43 http request GET https://registry.npmjs.org/@emotion%2freact
+44 verbose request uri https://registry.npmjs.org/@emotion%2fstyled
+45 verbose request no auth needed
+46 info attempt registry request try #1 at 1:46:23 PM
+47 verbose etag W/"e00208453bbc755397758e40bd8ad835"
+48 verbose lastModified Fri, 26 Nov 2021 10:33:45 GMT
+49 http request GET https://registry.npmjs.org/@emotion%2fstyled
+50 http 304 https://registry.npmjs.org/@emotion%2fstyled
+51 verbose headers { date: 'Thu, 20 Jan 2022 13:46:23 GMT',
+51 verbose headers   connection: 'keep-alive',
+51 verbose headers   'cf-ray': '6d08bfa74857618f-ICN',
+51 verbose headers   age: '50',
+51 verbose headers   'cache-control': 'public, max-age=300',
+51 verbose headers   etag: '"e00208453bbc755397758e40bd8ad835"',
+51 verbose headers   'last-modified': 'Fri, 26 Nov 2021 10:33:45 GMT',
+51 verbose headers   vary: 'Accept-Encoding',
+51 verbose headers   'cf-cache-status': 'HIT',
+51 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+51 verbose headers   'x-amz-replication-status': 'COMPLETED',
+51 verbose headers   server: 'cloudflare' }
+52 silly get cb [ 304,
+52 silly get   { date: 'Thu, 20 Jan 2022 13:46:23 GMT',
+52 silly get     connection: 'keep-alive',
+52 silly get     'cf-ray': '6d08bfa74857618f-ICN',
+52 silly get     age: '50',
+52 silly get     'cache-control': 'public, max-age=300',
+52 silly get     etag: '"e00208453bbc755397758e40bd8ad835"',
+52 silly get     'last-modified': 'Fri, 26 Nov 2021 10:33:45 GMT',
+52 silly get     vary: 'Accept-Encoding',
+52 silly get     'cf-cache-status': 'HIT',
+52 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+52 silly get     'x-amz-replication-status': 'COMPLETED',
+52 silly get     server: 'cloudflare' } ]
+53 verbose etag https://registry.npmjs.org/@emotion%2fstyled from cache
+54 verbose get saving @emotion/styled to /root/.npm/registry.npmjs.org/_40emotion_252fstyled/.cache.json
+55 http 304 https://registry.npmjs.org/@mui%2fmaterial
+56 verbose headers { date: 'Thu, 20 Jan 2022 13:46:23 GMT',
+56 verbose headers   connection: 'keep-alive',
+56 verbose headers   'cf-ray': '6d08bfa74ae5a261-ICN',
+56 verbose headers   age: '50',
+56 verbose headers   'cache-control': 'public, max-age=300',
+56 verbose headers   etag: '"24ea4cfe90363b417caf99fb19706c75"',
+56 verbose headers   'last-modified': 'Mon, 17 Jan 2022 22:41:56 GMT',
+56 verbose headers   vary: 'Accept-Encoding',
+56 verbose headers   'cf-cache-status': 'HIT',
+56 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+56 verbose headers   'x-amz-replication-status': 'COMPLETED',
+56 verbose headers   server: 'cloudflare' }
+57 silly get cb [ 304,
+57 silly get   { date: 'Thu, 20 Jan 2022 13:46:23 GMT',
+57 silly get     connection: 'keep-alive',
+57 silly get     'cf-ray': '6d08bfa74ae5a261-ICN',
+57 silly get     age: '50',
+57 silly get     'cache-control': 'public, max-age=300',
+57 silly get     etag: '"24ea4cfe90363b417caf99fb19706c75"',
+57 silly get     'last-modified': 'Mon, 17 Jan 2022 22:41:56 GMT',
+57 silly get     vary: 'Accept-Encoding',
+57 silly get     'cf-cache-status': 'HIT',
+57 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+57 silly get     'x-amz-replication-status': 'COMPLETED',
+57 silly get     server: 'cloudflare' } ]
+58 verbose etag https://registry.npmjs.org/@mui%2fmaterial from cache
+59 verbose get saving @mui/material to /root/.npm/registry.npmjs.org/_40mui_252fmaterial/.cache.json
+60 http 304 https://registry.npmjs.org/@emotion%2freact
+61 verbose headers { date: 'Thu, 20 Jan 2022 13:46:23 GMT',
+61 verbose headers   connection: 'keep-alive',
+61 verbose headers   'cf-ray': '6d08bfa74b5d619a-ICN',
+61 verbose headers   age: '130',
+61 verbose headers   'cache-control': 'public, max-age=300',
+61 verbose headers   etag: '"d5da615e4dab1bf0050b563b1f6dd4a0"',
+61 verbose headers   'last-modified': 'Sun, 12 Dec 2021 22:28:45 GMT',
+61 verbose headers   vary: 'Accept-Encoding',
+61 verbose headers   'cf-cache-status': 'HIT',
+61 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+61 verbose headers   'x-amz-replication-status': 'COMPLETED',
+61 verbose headers   server: 'cloudflare' }
+62 silly get cb [ 304,
+62 silly get   { date: 'Thu, 20 Jan 2022 13:46:23 GMT',
+62 silly get     connection: 'keep-alive',
+62 silly get     'cf-ray': '6d08bfa74b5d619a-ICN',
+62 silly get     age: '130',
+62 silly get     'cache-control': 'public, max-age=300',
+62 silly get     etag: '"d5da615e4dab1bf0050b563b1f6dd4a0"',
+62 silly get     'last-modified': 'Sun, 12 Dec 2021 22:28:45 GMT',
+62 silly get     vary: 'Accept-Encoding',
+62 silly get     'cf-cache-status': 'HIT',
+62 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+62 silly get     'x-amz-replication-status': 'COMPLETED',
+62 silly get     server: 'cloudflare' } ]
+63 verbose etag https://registry.npmjs.org/@emotion%2freact from cache
+64 verbose get saving @emotion/react to /root/.npm/registry.npmjs.org/_40emotion_252freact/.cache.json
+65 silly install normalizeTree
+66 silly loadCurrentTree Finishing
+67 silly loadIdealTree Starting
+68 silly install loadIdealTree
+69 silly cloneCurrentTree Starting
+70 silly install cloneCurrentTreeToIdealTree
+71 silly cloneCurrentTree Finishing
+72 silly loadShrinkwrap Starting
+73 silly install loadShrinkwrap
+74 silly loadShrinkwrap Finishing
+75 silly loadAllDepsIntoIdealTree Starting
+76 silly install loadAllDepsIntoIdealTree
+77 silly resolveWithNewModule @emotion/styled@11.6.0 checking installable status
+78 silly cache add args [ '@emotion/styled', null ]
+79 verbose cache add spec @emotion/styled
+80 silly resolveWithNewModule @mui/material@5.3.0 checking installable status
+81 silly cache add args [ '@mui/material', null ]
+82 verbose cache add spec @mui/material
+83 silly resolveWithNewModule @emotion/react@11.7.1 checking installable status
+84 silly cache add args [ '@emotion/react', null ]
+85 verbose cache add spec @emotion/react
+86 silly cache add parsed spec Result {
+86 silly cache add   raw: '@emotion/styled',
+86 silly cache add   scope: '@emotion',
+86 silly cache add   name: '@emotion/styled',
+86 silly cache add   rawSpec: '',
+86 silly cache add   spec: 'latest',
+86 silly cache add   type: 'tag' }
+87 silly addNamed @emotion/styled@latest
+88 verbose addNamed "latest" is being treated as a dist-tag for @emotion/styled
+89 info addNameTag [ '@emotion/styled', 'latest' ]
+90 silly mapToRegistry name @emotion/styled
+91 silly mapToRegistry scope (from package name) @emotion
+92 verbose mapToRegistry no registry URL found in name for scope @emotion
+93 silly mapToRegistry using default registry
+94 silly mapToRegistry registry https://registry.npmjs.org/
+95 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2fstyled
+96 verbose addNameTag registry:https://registry.npmjs.org/@emotion%2fstyled not in flight; fetching
+97 silly cache add parsed spec Result {
+97 silly cache add   raw: '@mui/material',
+97 silly cache add   scope: '@mui',
+97 silly cache add   name: '@mui/material',
+97 silly cache add   rawSpec: '',
+97 silly cache add   spec: 'latest',
+97 silly cache add   type: 'tag' }
+98 silly addNamed @mui/material@latest
+99 verbose addNamed "latest" is being treated as a dist-tag for @mui/material
+100 info addNameTag [ '@mui/material', 'latest' ]
+101 silly mapToRegistry name @mui/material
+102 silly mapToRegistry scope (from package name) @mui
+103 verbose mapToRegistry no registry URL found in name for scope @mui
+104 silly mapToRegistry using default registry
+105 silly mapToRegistry registry https://registry.npmjs.org/
+106 silly mapToRegistry uri https://registry.npmjs.org/@mui%2fmaterial
+107 verbose addNameTag registry:https://registry.npmjs.org/@mui%2fmaterial not in flight; fetching
+108 silly cache add parsed spec Result {
+108 silly cache add   raw: '@emotion/react',
+108 silly cache add   scope: '@emotion',
+108 silly cache add   name: '@emotion/react',
+108 silly cache add   rawSpec: '',
+108 silly cache add   spec: 'latest',
+108 silly cache add   type: 'tag' }
+109 silly addNamed @emotion/react@latest
+110 verbose addNamed "latest" is being treated as a dist-tag for @emotion/react
+111 info addNameTag [ '@emotion/react', 'latest' ]
+112 silly mapToRegistry name @emotion/react
+113 silly mapToRegistry scope (from package name) @emotion
+114 verbose mapToRegistry no registry URL found in name for scope @emotion
+115 silly mapToRegistry using default registry
+116 silly mapToRegistry registry https://registry.npmjs.org/
+117 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2freact
+118 verbose addNameTag registry:https://registry.npmjs.org/@emotion%2freact not in flight; fetching
+119 verbose get https://registry.npmjs.org/@emotion%2fstyled not expired, no request
+120 silly addNameTag next cb for @emotion/styled with tag latest
+121 silly addNamed @emotion/styled@11.6.0
+122 verbose addNamed "11.6.0" is a plain semver version for @emotion/styled
+123 verbose get https://registry.npmjs.org/@mui%2fmaterial not expired, no request
+124 silly addNameTag next cb for @mui/material with tag latest
+125 silly addNamed @mui/material@5.3.0
+126 verbose addNamed "5.3.0" is a plain semver version for @mui/material
+127 verbose get https://registry.npmjs.org/@emotion%2freact not expired, no request
+128 silly addNameTag next cb for @emotion/react with tag latest
+129 silly addNamed @emotion/react@11.7.1
+130 verbose addNamed "11.7.1" is a plain semver version for @emotion/react
+131 silly cache afterAdd @emotion/styled@11.6.0
+132 verbose afterAdd /root/.npm/@emotion/styled/11.6.0/package/package.json not in flight; writing
+133 silly cache afterAdd @mui/material@5.3.0
+134 verbose afterAdd /root/.npm/@mui/material/5.3.0/package/package.json not in flight; writing
+135 silly cache afterAdd @emotion/react@11.7.1
+136 verbose afterAdd /root/.npm/@emotion/react/11.7.1/package/package.json not in flight; writing
+137 verbose afterAdd /root/.npm/@mui/material/5.3.0/package/package.json written
+138 verbose afterAdd /root/.npm/@emotion/styled/11.6.0/package/package.json written
+139 verbose afterAdd /root/.npm/@emotion/react/11.7.1/package/package.json written
+140 silly fetchNamedPackageData @babel/runtime
+141 silly mapToRegistry name @babel/runtime
+142 silly mapToRegistry scope (from package name) @babel
+143 verbose mapToRegistry no registry URL found in name for scope @babel
+144 silly mapToRegistry using default registry
+145 silly mapToRegistry registry https://registry.npmjs.org/
+146 silly mapToRegistry uri https://registry.npmjs.org/@babel%2fruntime
+147 silly fetchNamedPackageData @emotion/cache
+148 silly mapToRegistry name @emotion/cache
+149 silly mapToRegistry scope (from package name) @emotion
+150 verbose mapToRegistry no registry URL found in name for scope @emotion
+151 silly mapToRegistry using default registry
+152 silly mapToRegistry registry https://registry.npmjs.org/
+153 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2fcache
+154 silly fetchNamedPackageData @emotion/serialize
+155 silly mapToRegistry name @emotion/serialize
+156 silly mapToRegistry scope (from package name) @emotion
+157 verbose mapToRegistry no registry URL found in name for scope @emotion
+158 silly mapToRegistry using default registry
+159 silly mapToRegistry registry https://registry.npmjs.org/
+160 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2fserialize
+161 silly fetchNamedPackageData @emotion/sheet
+162 silly mapToRegistry name @emotion/sheet
+163 silly mapToRegistry scope (from package name) @emotion
+164 verbose mapToRegistry no registry URL found in name for scope @emotion
+165 silly mapToRegistry using default registry
+166 silly mapToRegistry registry https://registry.npmjs.org/
+167 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2fsheet
+168 silly fetchNamedPackageData @emotion/utils
+169 silly mapToRegistry name @emotion/utils
+170 silly mapToRegistry scope (from package name) @emotion
+171 verbose mapToRegistry no registry URL found in name for scope @emotion
+172 silly mapToRegistry using default registry
+173 silly mapToRegistry registry https://registry.npmjs.org/
+174 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2futils
+175 silly fetchNamedPackageData @emotion/weak-memoize
+176 silly mapToRegistry name @emotion/weak-memoize
+177 silly mapToRegistry scope (from package name) @emotion
+178 verbose mapToRegistry no registry URL found in name for scope @emotion
+179 silly mapToRegistry using default registry
+180 silly mapToRegistry registry https://registry.npmjs.org/
+181 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2fweak-memoize
+182 silly fetchNamedPackageData hoist-non-react-statics
+183 silly mapToRegistry name hoist-non-react-statics
+184 silly mapToRegistry using default registry
+185 silly mapToRegistry registry https://registry.npmjs.org/
+186 silly mapToRegistry uri https://registry.npmjs.org/hoist-non-react-statics
+187 verbose request uri https://registry.npmjs.org/@babel%2fruntime
+188 verbose request no auth needed
+189 info attempt registry request try #1 at 1:46:25 PM
+190 verbose etag W/"fd4e67b2166629355beb86e942216785"
+191 verbose lastModified Fri, 31 Dec 2021 00:21:27 GMT
+192 http request GET https://registry.npmjs.org/@babel%2fruntime
+193 verbose request uri https://registry.npmjs.org/@emotion%2fcache
+194 verbose request no auth needed
+195 info attempt registry request try #1 at 1:46:25 PM
+196 verbose etag W/"b60790501cca1476ec2bd05f4d8044bf"
+197 verbose lastModified Sun, 12 Dec 2021 22:28:43 GMT
+198 http request GET https://registry.npmjs.org/@emotion%2fcache
+199 verbose request uri https://registry.npmjs.org/@emotion%2fserialize
+200 verbose request no auth needed
+201 info attempt registry request try #1 at 1:46:25 PM
+202 verbose etag W/"d5e323f3fb7f66e147713e0ccd477864"
+203 verbose lastModified Thu, 08 Apr 2021 12:28:10 GMT
+204 http request GET https://registry.npmjs.org/@emotion%2fserialize
+205 verbose request uri https://registry.npmjs.org/@emotion%2fsheet
+206 verbose request no auth needed
+207 info attempt registry request try #1 at 1:46:25 PM
+208 verbose etag W/"88b3e0f21ba86e9ea3077c5ef5b538c4"
+209 verbose lastModified Sun, 14 Nov 2021 07:12:15 GMT
+210 http request GET https://registry.npmjs.org/@emotion%2fsheet
+211 verbose request uri https://registry.npmjs.org/@emotion%2futils
+212 verbose request no auth needed
+213 info attempt registry request try #1 at 1:46:25 PM
+214 verbose etag W/"2c6eddd2000d115ee9db89342ad695ed"
+215 verbose lastModified Thu, 12 Nov 2020 00:45:51 GMT
+216 http request GET https://registry.npmjs.org/@emotion%2futils
+217 verbose request uri https://registry.npmjs.org/@emotion%2fweak-memoize
+218 verbose request no auth needed
+219 info attempt registry request try #1 at 1:46:25 PM
+220 verbose etag W/"27e9516e0f369cafa74818a4185785eb"
+221 verbose lastModified Mon, 12 Oct 2020 07:02:34 GMT
+222 http request GET https://registry.npmjs.org/@emotion%2fweak-memoize
+223 verbose request uri https://registry.npmjs.org/hoist-non-react-statics
+224 verbose request no auth needed
+225 info attempt registry request try #1 at 1:46:25 PM
+226 verbose etag W/"2db3907a19a2651effcae44377e4f16b"
+227 verbose lastModified Wed, 22 Jan 2020 23:21:06 GMT
+228 http request GET https://registry.npmjs.org/hoist-non-react-statics
+229 http 304 https://registry.npmjs.org/@babel%2fruntime
+230 verbose headers { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+230 verbose headers   connection: 'keep-alive',
+230 verbose headers   'cf-ray': '6d08bfb6bbc5618f-ICN',
+230 verbose headers   age: '147',
+230 verbose headers   'cache-control': 'public, max-age=300',
+230 verbose headers   etag: '"fd4e67b2166629355beb86e942216785"',
+230 verbose headers   'last-modified': 'Fri, 31 Dec 2021 00:21:27 GMT',
+230 verbose headers   vary: 'Accept-Encoding',
+230 verbose headers   'cf-cache-status': 'HIT',
+230 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+230 verbose headers   'x-amz-replication-status': 'PENDING',
+230 verbose headers   server: 'cloudflare' }
+231 silly get cb [ 304,
+231 silly get   { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+231 silly get     connection: 'keep-alive',
+231 silly get     'cf-ray': '6d08bfb6bbc5618f-ICN',
+231 silly get     age: '147',
+231 silly get     'cache-control': 'public, max-age=300',
+231 silly get     etag: '"fd4e67b2166629355beb86e942216785"',
+231 silly get     'last-modified': 'Fri, 31 Dec 2021 00:21:27 GMT',
+231 silly get     vary: 'Accept-Encoding',
+231 silly get     'cf-cache-status': 'HIT',
+231 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+231 silly get     'x-amz-replication-status': 'PENDING',
+231 silly get     server: 'cloudflare' } ]
+232 verbose etag https://registry.npmjs.org/@babel%2fruntime from cache
+233 verbose get saving @babel/runtime to /root/.npm/registry.npmjs.org/_40babel_252fruntime/.cache.json
+234 http 304 https://registry.npmjs.org/@emotion%2fcache
+235 verbose headers { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+235 verbose headers   connection: 'keep-alive',
+235 verbose headers   'cf-ray': '6d08bfb6bad4a261-ICN',
+235 verbose headers   age: '49',
+235 verbose headers   'cache-control': 'public, max-age=300',
+235 verbose headers   etag: '"b60790501cca1476ec2bd05f4d8044bf"',
+235 verbose headers   'last-modified': 'Sun, 12 Dec 2021 22:28:43 GMT',
+235 verbose headers   vary: 'Accept-Encoding',
+235 verbose headers   'cf-cache-status': 'HIT',
+235 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+235 verbose headers   'x-amz-replication-status': 'COMPLETED',
+235 verbose headers   server: 'cloudflare' }
+236 silly get cb [ 304,
+236 silly get   { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+236 silly get     connection: 'keep-alive',
+236 silly get     'cf-ray': '6d08bfb6bad4a261-ICN',
+236 silly get     age: '49',
+236 silly get     'cache-control': 'public, max-age=300',
+236 silly get     etag: '"b60790501cca1476ec2bd05f4d8044bf"',
+236 silly get     'last-modified': 'Sun, 12 Dec 2021 22:28:43 GMT',
+236 silly get     vary: 'Accept-Encoding',
+236 silly get     'cf-cache-status': 'HIT',
+236 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+236 silly get     'x-amz-replication-status': 'COMPLETED',
+236 silly get     server: 'cloudflare' } ]
+237 verbose etag https://registry.npmjs.org/@emotion%2fcache from cache
+238 verbose get saving @emotion/cache to /root/.npm/registry.npmjs.org/_40emotion_252fcache/.cache.json
+239 http 304 https://registry.npmjs.org/@emotion%2fserialize
+240 verbose headers { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+240 verbose headers   connection: 'keep-alive',
+240 verbose headers   'cf-ray': '6d08bfb6b801619a-ICN',
+240 verbose headers   age: '48',
+240 verbose headers   'cache-control': 'public, max-age=300',
+240 verbose headers   etag: '"d5e323f3fb7f66e147713e0ccd477864"',
+240 verbose headers   'last-modified': 'Thu, 08 Apr 2021 12:28:10 GMT',
+240 verbose headers   vary: 'Accept-Encoding',
+240 verbose headers   'cf-cache-status': 'HIT',
+240 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+240 verbose headers   server: 'cloudflare' }
+241 silly get cb [ 304,
+241 silly get   { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+241 silly get     connection: 'keep-alive',
+241 silly get     'cf-ray': '6d08bfb6b801619a-ICN',
+241 silly get     age: '48',
+241 silly get     'cache-control': 'public, max-age=300',
+241 silly get     etag: '"d5e323f3fb7f66e147713e0ccd477864"',
+241 silly get     'last-modified': 'Thu, 08 Apr 2021 12:28:10 GMT',
+241 silly get     vary: 'Accept-Encoding',
+241 silly get     'cf-cache-status': 'HIT',
+241 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+241 silly get     server: 'cloudflare' } ]
+242 verbose etag https://registry.npmjs.org/@emotion%2fserialize from cache
+243 verbose get saving @emotion/serialize to /root/.npm/registry.npmjs.org/_40emotion_252fserialize/.cache.json
+244 http 304 https://registry.npmjs.org/@emotion%2futils
+245 verbose headers { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+245 verbose headers   connection: 'keep-alive',
+245 verbose headers   'cf-ray': '6d08bfb768650f98-ICN',
+245 verbose headers   age: '48',
+245 verbose headers   'cache-control': 'public, max-age=300',
+245 verbose headers   etag: '"2c6eddd2000d115ee9db89342ad695ed"',
+245 verbose headers   'last-modified': 'Thu, 12 Nov 2020 00:45:51 GMT',
+245 verbose headers   vary: 'Accept-Encoding',
+245 verbose headers   'cf-cache-status': 'HIT',
+245 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+245 verbose headers   server: 'cloudflare' }
+246 silly get cb [ 304,
+246 silly get   { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+246 silly get     connection: 'keep-alive',
+246 silly get     'cf-ray': '6d08bfb768650f98-ICN',
+246 silly get     age: '48',
+246 silly get     'cache-control': 'public, max-age=300',
+246 silly get     etag: '"2c6eddd2000d115ee9db89342ad695ed"',
+246 silly get     'last-modified': 'Thu, 12 Nov 2020 00:45:51 GMT',
+246 silly get     vary: 'Accept-Encoding',
+246 silly get     'cf-cache-status': 'HIT',
+246 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+246 silly get     server: 'cloudflare' } ]
+247 verbose etag https://registry.npmjs.org/@emotion%2futils from cache
+248 verbose get saving @emotion/utils to /root/.npm/registry.npmjs.org/_40emotion_252futils/.cache.json
+249 http 304 https://registry.npmjs.org/@emotion%2fweak-memoize
+250 verbose headers { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+250 verbose headers   connection: 'keep-alive',
+250 verbose headers   'cf-ray': '6d08bfb76819e9c8-ICN',
+250 verbose headers   age: '49',
+250 verbose headers   'cache-control': 'public, max-age=300',
+250 verbose headers   etag: '"27e9516e0f369cafa74818a4185785eb"',
+250 verbose headers   'last-modified': 'Mon, 12 Oct 2020 07:02:34 GMT',
+250 verbose headers   vary: 'Accept-Encoding',
+250 verbose headers   'cf-cache-status': 'HIT',
+250 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+250 verbose headers   server: 'cloudflare' }
+251 silly get cb [ 304,
+251 silly get   { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+251 silly get     connection: 'keep-alive',
+251 silly get     'cf-ray': '6d08bfb76819e9c8-ICN',
+251 silly get     age: '49',
+251 silly get     'cache-control': 'public, max-age=300',
+251 silly get     etag: '"27e9516e0f369cafa74818a4185785eb"',
+251 silly get     'last-modified': 'Mon, 12 Oct 2020 07:02:34 GMT',
+251 silly get     vary: 'Accept-Encoding',
+251 silly get     'cf-cache-status': 'HIT',
+251 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+251 silly get     server: 'cloudflare' } ]
+252 verbose etag https://registry.npmjs.org/@emotion%2fweak-memoize from cache
+253 verbose get saving @emotion/weak-memoize to /root/.npm/registry.npmjs.org/_40emotion_252fweak-memoize/.cache.json
+254 http 304 https://registry.npmjs.org/@emotion%2fsheet
+255 verbose headers { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+255 verbose headers   connection: 'keep-alive',
+255 verbose headers   'cf-ray': '6d08bfb76c3ee9f8-ICN',
+255 verbose headers   age: '49',
+255 verbose headers   'cache-control': 'public, max-age=300',
+255 verbose headers   etag: '"88b3e0f21ba86e9ea3077c5ef5b538c4"',
+255 verbose headers   'last-modified': 'Sun, 14 Nov 2021 07:12:15 GMT',
+255 verbose headers   vary: 'Accept-Encoding',
+255 verbose headers   'cf-cache-status': 'HIT',
+255 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+255 verbose headers   'x-amz-replication-status': 'COMPLETED',
+255 verbose headers   server: 'cloudflare' }
+256 silly get cb [ 304,
+256 silly get   { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+256 silly get     connection: 'keep-alive',
+256 silly get     'cf-ray': '6d08bfb76c3ee9f8-ICN',
+256 silly get     age: '49',
+256 silly get     'cache-control': 'public, max-age=300',
+256 silly get     etag: '"88b3e0f21ba86e9ea3077c5ef5b538c4"',
+256 silly get     'last-modified': 'Sun, 14 Nov 2021 07:12:15 GMT',
+256 silly get     vary: 'Accept-Encoding',
+256 silly get     'cf-cache-status': 'HIT',
+256 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+256 silly get     'x-amz-replication-status': 'COMPLETED',
+256 silly get     server: 'cloudflare' } ]
+257 verbose etag https://registry.npmjs.org/@emotion%2fsheet from cache
+258 verbose get saving @emotion/sheet to /root/.npm/registry.npmjs.org/_40emotion_252fsheet/.cache.json
+259 http 304 https://registry.npmjs.org/hoist-non-react-statics
+260 verbose headers { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+260 verbose headers   connection: 'keep-alive',
+260 verbose headers   'cf-ray': '6d08bfb77dde0f94-ICN',
+260 verbose headers   age: '134',
+260 verbose headers   'cache-control': 'public, max-age=300',
+260 verbose headers   etag: '"2db3907a19a2651effcae44377e4f16b"',
+260 verbose headers   'last-modified': 'Wed, 22 Jan 2020 23:21:06 GMT',
+260 verbose headers   vary: 'Accept-Encoding',
+260 verbose headers   'cf-cache-status': 'HIT',
+260 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+260 verbose headers   server: 'cloudflare' }
+261 silly get cb [ 304,
+261 silly get   { date: 'Thu, 20 Jan 2022 13:46:25 GMT',
+261 silly get     connection: 'keep-alive',
+261 silly get     'cf-ray': '6d08bfb77dde0f94-ICN',
+261 silly get     age: '134',
+261 silly get     'cache-control': 'public, max-age=300',
+261 silly get     etag: '"2db3907a19a2651effcae44377e4f16b"',
+261 silly get     'last-modified': 'Wed, 22 Jan 2020 23:21:06 GMT',
+261 silly get     vary: 'Accept-Encoding',
+261 silly get     'cf-cache-status': 'HIT',
+261 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+261 silly get     server: 'cloudflare' } ]
+262 verbose etag https://registry.npmjs.org/hoist-non-react-statics from cache
+263 verbose get saving hoist-non-react-statics to /root/.npm/registry.npmjs.org/hoist-non-react-statics/.cache.json
+264 silly resolveWithNewModule @babel/runtime@7.16.7 checking installable status
+265 silly cache add args [ '@babel/runtime@^7.13.10', null ]
+266 verbose cache add spec @babel/runtime@^7.13.10
+267 silly cache add parsed spec Result {
+267 silly cache add   raw: '@babel/runtime@^7.13.10',
+267 silly cache add   scope: '@babel',
+267 silly cache add   name: '@babel/runtime',
+267 silly cache add   rawSpec: '^7.13.10',
+267 silly cache add   spec: '>=7.13.10 <8.0.0',
+267 silly cache add   type: 'range' }
+268 silly addNamed @babel/runtime@>=7.13.10 <8.0.0
+269 verbose addNamed ">=7.13.10 <8.0.0" is a valid semver range for @babel/runtime
+270 silly addNameRange { name: '@babel/runtime',
+270 silly addNameRange   range: '>=7.13.10 <8.0.0',
+270 silly addNameRange   hasData: false }
+271 silly mapToRegistry name @babel/runtime
+272 silly mapToRegistry scope (from package name) @babel
+273 verbose mapToRegistry no registry URL found in name for scope @babel
+274 silly mapToRegistry using default registry
+275 silly mapToRegistry registry https://registry.npmjs.org/
+276 silly mapToRegistry uri https://registry.npmjs.org/@babel%2fruntime
+277 verbose addNameRange registry:https://registry.npmjs.org/@babel%2fruntime not in flight; fetching
+278 silly resolveWithNewModule @emotion/cache@11.7.1 checking installable status
+279 silly cache add args [ '@emotion/cache@^11.7.1', null ]
+280 verbose cache add spec @emotion/cache@^11.7.1
+281 silly cache add parsed spec Result {
+281 silly cache add   raw: '@emotion/cache@^11.7.1',
+281 silly cache add   scope: '@emotion',
+281 silly cache add   name: '@emotion/cache',
+281 silly cache add   rawSpec: '^11.7.1',
+281 silly cache add   spec: '>=11.7.1 <12.0.0',
+281 silly cache add   type: 'range' }
+282 silly addNamed @emotion/cache@>=11.7.1 <12.0.0
+283 verbose addNamed ">=11.7.1 <12.0.0" is a valid semver range for @emotion/cache
+284 silly addNameRange { name: '@emotion/cache',
+284 silly addNameRange   range: '>=11.7.1 <12.0.0',
+284 silly addNameRange   hasData: false }
+285 silly mapToRegistry name @emotion/cache
+286 silly mapToRegistry scope (from package name) @emotion
+287 verbose mapToRegistry no registry URL found in name for scope @emotion
+288 silly mapToRegistry using default registry
+289 silly mapToRegistry registry https://registry.npmjs.org/
+290 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2fcache
+291 verbose addNameRange registry:https://registry.npmjs.org/@emotion%2fcache not in flight; fetching
+292 silly resolveWithNewModule @emotion/serialize@1.0.2 checking installable status
+293 silly cache add args [ '@emotion/serialize@^1.0.2', null ]
+294 verbose cache add spec @emotion/serialize@^1.0.2
+295 silly cache add parsed spec Result {
+295 silly cache add   raw: '@emotion/serialize@^1.0.2',
+295 silly cache add   scope: '@emotion',
+295 silly cache add   name: '@emotion/serialize',
+295 silly cache add   rawSpec: '^1.0.2',
+295 silly cache add   spec: '>=1.0.2 <2.0.0',
+295 silly cache add   type: 'range' }
+296 silly addNamed @emotion/serialize@>=1.0.2 <2.0.0
+297 verbose addNamed ">=1.0.2 <2.0.0" is a valid semver range for @emotion/serialize
+298 silly addNameRange { name: '@emotion/serialize',
+298 silly addNameRange   range: '>=1.0.2 <2.0.0',
+298 silly addNameRange   hasData: false }
+299 silly mapToRegistry name @emotion/serialize
+300 silly mapToRegistry scope (from package name) @emotion
+301 verbose mapToRegistry no registry URL found in name for scope @emotion
+302 silly mapToRegistry using default registry
+303 silly mapToRegistry registry https://registry.npmjs.org/
+304 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2fserialize
+305 verbose addNameRange registry:https://registry.npmjs.org/@emotion%2fserialize not in flight; fetching
+306 verbose get https://registry.npmjs.org/@babel%2fruntime not expired, no request
+307 silly addNameRange number 2 { name: '@babel/runtime',
+307 silly addNameRange   range: '>=7.13.10 <8.0.0',
+307 silly addNameRange   hasData: true }
+308 silly addNameRange versions [ '@babel/runtime',
+308 silly addNameRange   [ '7.0.0-beta.4',
+308 silly addNameRange     '7.0.0-beta.5',
+308 silly addNameRange     '7.0.0-beta.31',
+308 silly addNameRange     '7.0.0-beta.32',
+308 silly addNameRange     '7.0.0-beta.33',
+308 silly addNameRange     '7.0.0-beta.34',
+308 silly addNameRange     '7.0.0-beta.35',
+308 silly addNameRange     '7.0.0-beta.36',
+308 silly addNameRange     '7.0.0-beta.37',
+308 silly addNameRange     '7.0.0-beta.38',
+308 silly addNameRange     '7.0.0-beta.39',
+308 silly addNameRange     '7.0.0-beta.40',
+308 silly addNameRange     '7.0.0-beta.41',
+308 silly addNameRange     '7.0.0-beta.42',
+308 silly addNameRange     '7.0.0-beta.43',
+308 silly addNameRange     '7.0.0-beta.44',
+308 silly addNameRange     '7.0.0-beta.45',
+308 silly addNameRange     '7.0.0-beta.46',
+308 silly addNameRange     '7.0.0-beta.47',
+308 silly addNameRange     '7.0.0-beta.48',
+308 silly addNameRange     '7.0.0-beta.49',
+308 silly addNameRange     '7.0.0-beta.50',
+308 silly addNameRange     '7.0.0-beta.51',
+308 silly addNameRange     '7.0.0-beta.52',
+308 silly addNameRange     '7.0.0-beta.53',
+308 silly addNameRange     '7.0.0-beta.54',
+308 silly addNameRange     '7.0.0-beta.55',
+308 silly addNameRange     '7.0.0-beta.56',
+308 silly addNameRange     '7.0.0-rc.0',
+308 silly addNameRange     '7.0.0-rc.1',
+308 silly addNameRange     '7.0.0-rc.2',
+308 silly addNameRange     '7.0.0-rc.3',
+308 silly addNameRange     '7.0.0-rc.4',
+308 silly addNameRange     '7.0.0',
+308 silly addNameRange     '7.1.1',
+308 silly addNameRange     '7.1.2',
+308 silly addNameRange     '7.1.5',
+308 silly addNameRange     '7.2.0',
+308 silly addNameRange     '7.3.0',
+308 silly addNameRange     '7.3.1',
+308 silly addNameRange     '7.3.4',
+308 silly addNameRange     '7.4.0',
+308 silly addNameRange     '7.4.2',
+308 silly addNameRange     '7.4.3',
+308 silly addNameRange     '7.4.4',
+308 silly addNameRange     '7.4.5',
+308 silly addNameRange     '7.5.0',
+308 silly addNameRange     '7.5.1',
+308 silly addNameRange     '7.5.2',
+308 silly addNameRange     '7.5.3',
+308 silly addNameRange     '7.5.4',
+308 silly addNameRange     '7.5.5',
+308 silly addNameRange     '7.6.0',
+308 silly addNameRange     '7.6.2',
+308 silly addNameRange     '7.6.3',
+308 silly addNameRange     '7.7.0',
+308 silly addNameRange     '7.7.1',
+308 silly addNameRange     '7.7.2',
+308 silly addNameRange     '7.7.4',
+308 silly addNameRange     '7.7.5',
+308 silly addNameRange     '7.7.6',
+308 silly addNameRange     '7.7.7',
+308 silly addNameRange     '7.8.0',
+308 silly addNameRange     '7.8.3',
+308 silly addNameRange     '7.8.4',
+308 silly addNameRange     '7.8.7',
+308 silly addNameRange     '7.9.0',
+308 silly addNameRange     '7.9.2',
+308 silly addNameRange     '7.9.6',
+308 silly addNameRange     '7.10.0',
+308 silly addNameRange     '7.10.1',
+308 silly addNameRange     '7.10.2',
+308 silly addNameRange     '7.10.3',
+308 silly addNameRange     '7.10.4',
+308 silly addNameRange     '7.10.5',
+308 silly addNameRange     '7.11.0',
+308 silly addNameRange     '7.11.1',
+308 silly addNameRange     '7.11.2',
+308 silly addNameRange     '7.12.0',
+308 silly addNameRange     '7.12.1',
+308 silly addNameRange     '7.12.5',
+308 silly addNameRange     '7.12.13',
+308 silly addNameRange     '7.12.17',
+308 silly addNameRange     '7.12.18',
+308 silly addNameRange     '7.13.0',
+308 silly addNameRange     '7.13.1',
+308 silly addNameRange     '7.13.2',
+308 silly addNameRange     '7.13.4',
+308 silly addNameRange     '7.13.6',
+308 silly addNameRange     '7.13.7',
+308 silly addNameRange     '7.13.8',
+308 silly addNameRange     '7.13.9',
+308 silly addNameRange     '7.13.10',
+308 silly addNameRange     '7.13.16',
+308 silly addNameRange     '7.13.17',
+308 silly addNameRange     '7.14.0',
+308 silly addNameRange     '7.14.5',
+308 silly addNameRange     '7.14.6',
+308 silly addNameRange     '7.14.8',
+308 silly addNameRange     '7.15.3',
+308 silly addNameRange     ... 5 more items ] ]
+309 silly addNamed @babel/runtime@7.16.7
+310 verbose addNamed "7.16.7" is a plain semver version for @babel/runtime
+311 verbose get https://registry.npmjs.org/@emotion%2fcache not expired, no request
+312 silly addNameRange number 2 { name: '@emotion/cache',
+312 silly addNameRange   range: '>=11.7.1 <12.0.0',
+312 silly addNameRange   hasData: true }
+313 silly addNameRange versions [ '@emotion/cache',
+313 silly addNameRange   [ '0.2.0',
+313 silly addNameRange     '0.2.1',
+313 silly addNameRange     '0.2.3',
+313 silly addNameRange     '0.4.0',
+313 silly addNameRange     '0.4.1',
+313 silly addNameRange     '0.5.0',
+313 silly addNameRange     '0.6.0',
+313 silly addNameRange     '0.6.2',
+313 silly addNameRange     '0.6.3',
+313 silly addNameRange     '0.6.4',
+313 silly addNameRange     '0.6.5',
+313 silly addNameRange     '0.7.0',
+313 silly addNameRange     '0.7.1',
+313 silly addNameRange     '0.8.0',
+313 silly addNameRange     '0.8.1',
+313 silly addNameRange     '0.8.2',
+313 silly addNameRange     '0.8.3',
+313 silly addNameRange     '0.8.4',
+313 silly addNameRange     '0.8.5',
+313 silly addNameRange     '0.8.6',
+313 silly addNameRange     '0.8.7',
+313 silly addNameRange     '0.8.8',
+313 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.0',
+313 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.1',
+313 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.2',
+313 silly addNameRange     '10.0.0-beta.0',
+313 silly addNameRange     '10.0.0-beta.1',
+313 silly addNameRange     '10.0.0-beta.2',
+313 silly addNameRange     '10.0.0-beta.3',
+313 silly addNameRange     '10.0.0-beta.4',
+313 silly addNameRange     '10.0.0-beta.5',
+313 silly addNameRange     '10.0.0-beta.6',
+313 silly addNameRange     '10.0.0-beta.7',
+313 silly addNameRange     '10.0.0-beta.8',
+313 silly addNameRange     '10.0.0-beta.9',
+313 silly addNameRange     '10.0.0-beta.10',
+313 silly addNameRange     '10.0.0-beta.11',
+313 silly addNameRange     '10.0.0-beta.12',
+313 silly addNameRange     '10.0.0-beta.13',
+313 silly addNameRange     '10.0.0',
+313 silly addNameRange     '10.0.7',
+313 silly addNameRange     '10.0.8',
+313 silly addNameRange     '10.0.9',
+313 silly addNameRange     '10.0.14',
+313 silly addNameRange     '10.0.15',
+313 silly addNameRange     '10.0.17',
+313 silly addNameRange     '10.0.19',
+313 silly addNameRange     '11.0.0-next.0',
+313 silly addNameRange     '11.0.0-next.6',
+313 silly addNameRange     '10.0.27',
+313 silly addNameRange     '11.0.0-next.10',
+313 silly addNameRange     '10.0.29',
+313 silly addNameRange     '11.0.0-next.12',
+313 silly addNameRange     '11.0.0-next.13',
+313 silly addNameRange     '11.0.0-next.15',
+313 silly addNameRange     '11.0.0-next.16',
+313 silly addNameRange     '11.0.0-next.18',
+313 silly addNameRange     '11.0.0-next.19',
+313 silly addNameRange     '11.0.0-rc.0',
+313 silly addNameRange     '11.0.0',
+313 silly addNameRange     '11.1.3',
+313 silly addNameRange     '11.4.0',
+313 silly addNameRange     '11.5.0',
+313 silly addNameRange     '11.6.0',
+313 silly addNameRange     '11.7.1' ] ]
+314 silly addNamed @emotion/cache@11.7.1
+315 verbose addNamed "11.7.1" is a plain semver version for @emotion/cache
+316 verbose get https://registry.npmjs.org/@emotion%2fserialize not expired, no request
+317 silly addNameRange number 2 { name: '@emotion/serialize',
+317 silly addNameRange   range: '>=1.0.2 <2.0.0',
+317 silly addNameRange   hasData: true }
+318 silly addNameRange versions [ '@emotion/serialize',
+318 silly addNameRange   [ '0.0.4',
+318 silly addNameRange     '0.0.5',
+318 silly addNameRange     '0.2.0',
+318 silly addNameRange     '0.2.1',
+318 silly addNameRange     '0.4.1',
+318 silly addNameRange     '0.5.0',
+318 silly addNameRange     '0.6.2',
+318 silly addNameRange     '0.7.0',
+318 silly addNameRange     '0.8.0',
+318 silly addNameRange     '0.8.1',
+318 silly addNameRange     '0.8.2',
+318 silly addNameRange     '0.8.3',
+318 silly addNameRange     '0.8.4',
+318 silly addNameRange     '0.8.5',
+318 silly addNameRange     '0.8.6',
+318 silly addNameRange     '0.9.0',
+318 silly addNameRange     '0.9.1',
+318 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.0',
+318 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.1',
+318 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.2',
+318 silly addNameRange     '0.10.0',
+318 silly addNameRange     '0.10.1',
+318 silly addNameRange     '0.10.2',
+318 silly addNameRange     '0.10.3',
+318 silly addNameRange     '0.10.4',
+318 silly addNameRange     '0.10.5',
+318 silly addNameRange     '0.10.6',
+318 silly addNameRange     '0.11.0',
+318 silly addNameRange     '0.11.1',
+318 silly addNameRange     '0.11.2',
+318 silly addNameRange     '0.11.3',
+318 silly addNameRange     '0.11.4',
+318 silly addNameRange     '0.11.5',
+318 silly addNameRange     '0.11.6',
+318 silly addNameRange     '0.11.7',
+318 silly addNameRange     '0.11.8',
+318 silly addNameRange     '0.11.9',
+318 silly addNameRange     '0.11.10',
+318 silly addNameRange     '0.11.11',
+318 silly addNameRange     '0.11.12',
+318 silly addNameRange     '0.11.13',
+318 silly addNameRange     '0.11.14',
+318 silly addNameRange     '1.0.0-next.0',
+318 silly addNameRange     '0.11.15-next.1',
+318 silly addNameRange     '0.11.15-next.2',
+318 silly addNameRange     '0.12.0-next.3',
+318 silly addNameRange     '0.11.15',
+318 silly addNameRange     '0.11.15-next.4',
+318 silly addNameRange     '0.11.16',
+318 silly addNameRange     '1.0.0-next.1',
+318 silly addNameRange     '1.0.0-next.3',
+318 silly addNameRange     '1.0.0-next.5',
+318 silly addNameRange     '1.0.0-rc.0',
+318 silly addNameRange     '1.0.0',
+318 silly addNameRange     '1.0.1',
+318 silly addNameRange     '1.0.2' ] ]
+319 silly addNamed @emotion/serialize@1.0.2
+320 verbose addNamed "1.0.2" is a plain semver version for @emotion/serialize
+321 silly resolveWithNewModule @emotion/sheet@1.1.0 checking installable status
+322 silly cache add args [ '@emotion/sheet@^1.1.0', null ]
+323 verbose cache add spec @emotion/sheet@^1.1.0
+324 silly cache add parsed spec Result {
+324 silly cache add   raw: '@emotion/sheet@^1.1.0',
+324 silly cache add   scope: '@emotion',
+324 silly cache add   name: '@emotion/sheet',
+324 silly cache add   rawSpec: '^1.1.0',
+324 silly cache add   spec: '>=1.1.0 <2.0.0',
+324 silly cache add   type: 'range' }
+325 silly addNamed @emotion/sheet@>=1.1.0 <2.0.0
+326 verbose addNamed ">=1.1.0 <2.0.0" is a valid semver range for @emotion/sheet
+327 silly addNameRange { name: '@emotion/sheet',
+327 silly addNameRange   range: '>=1.1.0 <2.0.0',
+327 silly addNameRange   hasData: false }
+328 silly mapToRegistry name @emotion/sheet
+329 silly mapToRegistry scope (from package name) @emotion
+330 verbose mapToRegistry no registry URL found in name for scope @emotion
+331 silly mapToRegistry using default registry
+332 silly mapToRegistry registry https://registry.npmjs.org/
+333 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2fsheet
+334 verbose addNameRange registry:https://registry.npmjs.org/@emotion%2fsheet not in flight; fetching
+335 silly resolveWithNewModule @emotion/weak-memoize@0.2.5 checking installable status
+336 silly cache add args [ '@emotion/weak-memoize@^0.2.5', null ]
+337 verbose cache add spec @emotion/weak-memoize@^0.2.5
+338 silly cache add parsed spec Result {
+338 silly cache add   raw: '@emotion/weak-memoize@^0.2.5',
+338 silly cache add   scope: '@emotion',
+338 silly cache add   name: '@emotion/weak-memoize',
+338 silly cache add   rawSpec: '^0.2.5',
+338 silly cache add   spec: '>=0.2.5 <0.3.0',
+338 silly cache add   type: 'range' }
+339 silly addNamed @emotion/weak-memoize@>=0.2.5 <0.3.0
+340 verbose addNamed ">=0.2.5 <0.3.0" is a valid semver range for @emotion/weak-memoize
+341 silly addNameRange { name: '@emotion/weak-memoize',
+341 silly addNameRange   range: '>=0.2.5 <0.3.0',
+341 silly addNameRange   hasData: false }
+342 silly mapToRegistry name @emotion/weak-memoize
+343 silly mapToRegistry scope (from package name) @emotion
+344 verbose mapToRegistry no registry URL found in name for scope @emotion
+345 silly mapToRegistry using default registry
+346 silly mapToRegistry registry https://registry.npmjs.org/
+347 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2fweak-memoize
+348 verbose addNameRange registry:https://registry.npmjs.org/@emotion%2fweak-memoize not in flight; fetching
+349 silly resolveWithNewModule hoist-non-react-statics@3.3.2 checking installable status
+350 silly cache add args [ 'hoist-non-react-statics@^3.3.1', null ]
+351 verbose cache add spec hoist-non-react-statics@^3.3.1
+352 silly cache add parsed spec Result {
+352 silly cache add   raw: 'hoist-non-react-statics@^3.3.1',
+352 silly cache add   scope: null,
+352 silly cache add   name: 'hoist-non-react-statics',
+352 silly cache add   rawSpec: '^3.3.1',
+352 silly cache add   spec: '>=3.3.1 <4.0.0',
+352 silly cache add   type: 'range' }
+353 silly addNamed hoist-non-react-statics@>=3.3.1 <4.0.0
+354 verbose addNamed ">=3.3.1 <4.0.0" is a valid semver range for hoist-non-react-statics
+355 silly addNameRange { name: 'hoist-non-react-statics',
+355 silly addNameRange   range: '>=3.3.1 <4.0.0',
+355 silly addNameRange   hasData: false }
+356 silly mapToRegistry name hoist-non-react-statics
+357 silly mapToRegistry using default registry
+358 silly mapToRegistry registry https://registry.npmjs.org/
+359 silly mapToRegistry uri https://registry.npmjs.org/hoist-non-react-statics
+360 verbose addNameRange registry:https://registry.npmjs.org/hoist-non-react-statics not in flight; fetching
+361 silly resolveWithNewModule @emotion/utils@1.0.0 checking installable status
+362 silly cache add args [ '@emotion/utils@^1.0.0', null ]
+363 verbose cache add spec @emotion/utils@^1.0.0
+364 silly cache add parsed spec Result {
+364 silly cache add   raw: '@emotion/utils@^1.0.0',
+364 silly cache add   scope: '@emotion',
+364 silly cache add   name: '@emotion/utils',
+364 silly cache add   rawSpec: '^1.0.0',
+364 silly cache add   spec: '>=1.0.0 <2.0.0',
+364 silly cache add   type: 'range' }
+365 silly addNamed @emotion/utils@>=1.0.0 <2.0.0
+366 verbose addNamed ">=1.0.0 <2.0.0" is a valid semver range for @emotion/utils
+367 silly addNameRange { name: '@emotion/utils',
+367 silly addNameRange   range: '>=1.0.0 <2.0.0',
+367 silly addNameRange   hasData: false }
+368 silly mapToRegistry name @emotion/utils
+369 silly mapToRegistry scope (from package name) @emotion
+370 verbose mapToRegistry no registry URL found in name for scope @emotion
+371 silly mapToRegistry using default registry
+372 silly mapToRegistry registry https://registry.npmjs.org/
+373 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2futils
+374 verbose addNameRange registry:https://registry.npmjs.org/@emotion%2futils not in flight; fetching
+375 silly cache afterAdd @babel/runtime@7.16.7
+376 verbose afterAdd /root/.npm/@babel/runtime/7.16.7/package/package.json not in flight; writing
+377 verbose get https://registry.npmjs.org/@emotion%2fweak-memoize not expired, no request
+378 silly addNameRange number 2 { name: '@emotion/weak-memoize',
+378 silly addNameRange   range: '>=0.2.5 <0.3.0',
+378 silly addNameRange   hasData: true }
+379 silly addNameRange versions [ '@emotion/weak-memoize',
+379 silly addNameRange   [ '0.1.1',
+379 silly addNameRange     '0.1.2',
+379 silly addNameRange     '0.1.3',
+379 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.0',
+379 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.1',
+379 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.2',
+379 silly addNameRange     '0.2.0',
+379 silly addNameRange     '0.2.1',
+379 silly addNameRange     '0.2.2',
+379 silly addNameRange     '0.2.3',
+379 silly addNameRange     '0.2.4',
+379 silly addNameRange     '0.2.5' ] ]
+380 silly addNamed @emotion/weak-memoize@0.2.5
+381 verbose addNamed "0.2.5" is a plain semver version for @emotion/weak-memoize
+382 verbose get https://registry.npmjs.org/@emotion%2fsheet not expired, no request
+383 silly addNameRange number 2 { name: '@emotion/sheet',
+383 silly addNameRange   range: '>=1.1.0 <2.0.0',
+383 silly addNameRange   hasData: true }
+384 silly addNameRange versions [ '@emotion/sheet',
+384 silly addNameRange   [ '0.0.4',
+384 silly addNameRange     '0.0.5',
+384 silly addNameRange     '0.2.0',
+384 silly addNameRange     '0.6.0',
+384 silly addNameRange     '0.6.2',
+384 silly addNameRange     '0.6.3',
+384 silly addNameRange     '0.6.4',
+384 silly addNameRange     '0.6.5',
+384 silly addNameRange     '0.6.6',
+384 silly addNameRange     '0.7.0',
+384 silly addNameRange     '0.7.1',
+384 silly addNameRange     '0.7.2',
+384 silly addNameRange     '0.8.0',
+384 silly addNameRange     '0.8.1',
+384 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.0',
+384 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.1',
+384 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.2',
+384 silly addNameRange     '0.9.0',
+384 silly addNameRange     '0.9.1',
+384 silly addNameRange     '0.9.2',
+384 silly addNameRange     '0.9.3',
+384 silly addNameRange     '0.10.0-next.0',
+384 silly addNameRange     '0.9.4',
+384 silly addNameRange     '0.10.0-next.1',
+384 silly addNameRange     '1.0.0-next.2',
+384 silly addNameRange     '1.0.0-next.3',
+384 silly addNameRange     '1.0.0-next.4',
+384 silly addNameRange     '1.0.0-next.5',
+384 silly addNameRange     '1.0.0-rc.0',
+384 silly addNameRange     '1.0.0',
+384 silly addNameRange     '1.0.1',
+384 silly addNameRange     '1.0.2',
+384 silly addNameRange     '1.0.3',
+384 silly addNameRange     '1.1.0' ] ]
+385 silly addNamed @emotion/sheet@1.1.0
+386 verbose addNamed "1.1.0" is a plain semver version for @emotion/sheet
+387 verbose get https://registry.npmjs.org/hoist-non-react-statics not expired, no request
+388 silly addNameRange number 2 { name: 'hoist-non-react-statics',
+388 silly addNameRange   range: '>=3.3.1 <4.0.0',
+388 silly addNameRange   hasData: true }
+389 silly addNameRange versions [ 'hoist-non-react-statics',
+389 silly addNameRange   [ '1.0.0',
+389 silly addNameRange     '1.0.1',
+389 silly addNameRange     '1.0.2',
+389 silly addNameRange     '1.0.3',
+389 silly addNameRange     '1.0.4',
+389 silly addNameRange     '1.0.5',
+389 silly addNameRange     '1.0.6',
+389 silly addNameRange     '1.1.0',
+389 silly addNameRange     '1.2.0',
+389 silly addNameRange     '2.0.0',
+389 silly addNameRange     '2.1.0',
+389 silly addNameRange     '2.1.1',
+389 silly addNameRange     '2.2.0',
+389 silly addNameRange     '2.2.1',
+389 silly addNameRange     '2.2.2',
+389 silly addNameRange     '2.3.0',
+389 silly addNameRange     '2.3.1',
+389 silly addNameRange     '2.5.0',
+389 silly addNameRange     '2.5.1',
+389 silly addNameRange     '2.5.2',
+389 silly addNameRange     '2.5.3',
+389 silly addNameRange     '2.5.4',
+389 silly addNameRange     '2.5.5',
+389 silly addNameRange     '3.0.0-rc.0',
+389 silly addNameRange     '3.0.0-rc.1',
+389 silly addNameRange     '3.0.0',
+389 silly addNameRange     '3.0.1',
+389 silly addNameRange     '3.1.0',
+389 silly addNameRange     '3.2.0',
+389 silly addNameRange     '3.2.1',
+389 silly addNameRange     '3.3.0',
+389 silly addNameRange     '3.3.1',
+389 silly addNameRange     '3.3.2' ] ]
+390 silly addNamed hoist-non-react-statics@3.3.2
+391 verbose addNamed "3.3.2" is a plain semver version for hoist-non-react-statics
+392 verbose get https://registry.npmjs.org/@emotion%2futils not expired, no request
+393 silly addNameRange number 2 { name: '@emotion/utils',
+393 silly addNameRange   range: '>=1.0.0 <2.0.0',
+393 silly addNameRange   hasData: true }
+394 silly addNameRange versions [ '@emotion/utils',
+394 silly addNameRange   [ '0.0.4',
+394 silly addNameRange     '0.0.5',
+394 silly addNameRange     '0.1.0',
+394 silly addNameRange     '0.2.0',
+394 silly addNameRange     '0.4.0',
+394 silly addNameRange     '0.4.1',
+394 silly addNameRange     '0.5.0',
+394 silly addNameRange     '0.6.0',
+394 silly addNameRange     '0.6.1',
+394 silly addNameRange     '0.7.0',
+394 silly addNameRange     '0.7.1',
+394 silly addNameRange     '0.7.2',
+394 silly addNameRange     '0.7.3',
+394 silly addNameRange     '0.8.0',
+394 silly addNameRange     '0.8.1',
+394 silly addNameRange     '0.8.2',
+394 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.0',
+394 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.1',
+394 silly addNameRange     '10.0.0-really-unsafe-please-do-not-use.2',
+394 silly addNameRange     '0.9.0',
+394 silly addNameRange     '0.10.0',
+394 silly addNameRange     '0.10.1',
+394 silly addNameRange     '0.11.0',
+394 silly addNameRange     '0.11.1',
+394 silly addNameRange     '0.11.2',
+394 silly addNameRange     '0.11.3',
+394 silly addNameRange     '1.0.0-next.0',
+394 silly addNameRange     '1.0.0-next.1',
+394 silly addNameRange     '1.0.0-rc.0',
+394 silly addNameRange     '1.0.0' ] ]
+395 silly addNamed @emotion/utils@1.0.0
+396 verbose addNamed "1.0.0" is a plain semver version for @emotion/utils
+397 silly cache afterAdd @emotion/cache@11.7.1
+398 verbose afterAdd /root/.npm/@emotion/cache/11.7.1/package/package.json not in flight; writing
+399 silly cache afterAdd @emotion/serialize@1.0.2
+400 verbose afterAdd /root/.npm/@emotion/serialize/1.0.2/package/package.json not in flight; writing
+401 verbose afterAdd /root/.npm/@babel/runtime/7.16.7/package/package.json written
+402 verbose afterAdd /root/.npm/@emotion/cache/11.7.1/package/package.json written
+403 verbose afterAdd /root/.npm/@emotion/serialize/1.0.2/package/package.json written
+404 silly cache afterAdd @emotion/weak-memoize@0.2.5
+405 verbose afterAdd /root/.npm/@emotion/weak-memoize/0.2.5/package/package.json not in flight; writing
+406 silly cache afterAdd @emotion/sheet@1.1.0
+407 verbose afterAdd /root/.npm/@emotion/sheet/1.1.0/package/package.json not in flight; writing
+408 silly cache afterAdd hoist-non-react-statics@3.3.2
+409 verbose afterAdd /root/.npm/hoist-non-react-statics/3.3.2/package/package.json not in flight; writing
+410 silly cache afterAdd @emotion/utils@1.0.0
+411 verbose afterAdd /root/.npm/@emotion/utils/1.0.0/package/package.json not in flight; writing
+412 verbose afterAdd /root/.npm/@emotion/weak-memoize/0.2.5/package/package.json written
+413 verbose afterAdd /root/.npm/@emotion/sheet/1.1.0/package/package.json written
+414 verbose afterAdd /root/.npm/hoist-non-react-statics/3.3.2/package/package.json written
+415 verbose afterAdd /root/.npm/@emotion/utils/1.0.0/package/package.json written
+416 silly fetchNamedPackageData regenerator-runtime
+417 silly mapToRegistry name regenerator-runtime
+418 silly mapToRegistry using default registry
+419 silly mapToRegistry registry https://registry.npmjs.org/
+420 silly mapToRegistry uri https://registry.npmjs.org/regenerator-runtime
+421 verbose request uri https://registry.npmjs.org/regenerator-runtime
+422 verbose request no auth needed
+423 info attempt registry request try #1 at 1:46:26 PM
+424 verbose etag W/"a2c475ee3230b827dea0f7af34d16e66"
+425 verbose lastModified Thu, 22 Jul 2021 22:29:18 GMT
+426 http request GET https://registry.npmjs.org/regenerator-runtime
+427 http 304 https://registry.npmjs.org/regenerator-runtime
+428 verbose headers { date: 'Thu, 20 Jan 2022 13:46:26 GMT',
+428 verbose headers   connection: 'keep-alive',
+428 verbose headers   'cf-ray': '6d08bfbca95a618f-ICN',
+428 verbose headers   age: '165',
+428 verbose headers   'cache-control': 'public, max-age=300',
+428 verbose headers   etag: '"a2c475ee3230b827dea0f7af34d16e66"',
+428 verbose headers   'last-modified': 'Thu, 22 Jul 2021 22:29:18 GMT',
+428 verbose headers   vary: 'Accept-Encoding',
+428 verbose headers   'cf-cache-status': 'HIT',
+428 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+428 verbose headers   'x-amz-replication-status': 'COMPLETED',
+428 verbose headers   server: 'cloudflare' }
+429 silly get cb [ 304,
+429 silly get   { date: 'Thu, 20 Jan 2022 13:46:26 GMT',
+429 silly get     connection: 'keep-alive',
+429 silly get     'cf-ray': '6d08bfbca95a618f-ICN',
+429 silly get     age: '165',
+429 silly get     'cache-control': 'public, max-age=300',
+429 silly get     etag: '"a2c475ee3230b827dea0f7af34d16e66"',
+429 silly get     'last-modified': 'Thu, 22 Jul 2021 22:29:18 GMT',
+429 silly get     vary: 'Accept-Encoding',
+429 silly get     'cf-cache-status': 'HIT',
+429 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+429 silly get     'x-amz-replication-status': 'COMPLETED',
+429 silly get     server: 'cloudflare' } ]
+430 verbose etag https://registry.npmjs.org/regenerator-runtime from cache
+431 verbose get saving regenerator-runtime to /root/.npm/registry.npmjs.org/regenerator-runtime/.cache.json
+432 silly resolveWithNewModule regenerator-runtime@0.13.9 checking installable status
+433 silly cache add args [ 'regenerator-runtime@^0.13.4', null ]
+434 verbose cache add spec regenerator-runtime@^0.13.4
+435 silly cache add parsed spec Result {
+435 silly cache add   raw: 'regenerator-runtime@^0.13.4',
+435 silly cache add   scope: null,
+435 silly cache add   name: 'regenerator-runtime',
+435 silly cache add   rawSpec: '^0.13.4',
+435 silly cache add   spec: '>=0.13.4 <0.14.0',
+435 silly cache add   type: 'range' }
+436 silly addNamed regenerator-runtime@>=0.13.4 <0.14.0
+437 verbose addNamed ">=0.13.4 <0.14.0" is a valid semver range for regenerator-runtime
+438 silly addNameRange { name: 'regenerator-runtime',
+438 silly addNameRange   range: '>=0.13.4 <0.14.0',
+438 silly addNameRange   hasData: false }
+439 silly mapToRegistry name regenerator-runtime
+440 silly mapToRegistry using default registry
+441 silly mapToRegistry registry https://registry.npmjs.org/
+442 silly mapToRegistry uri https://registry.npmjs.org/regenerator-runtime
+443 verbose addNameRange registry:https://registry.npmjs.org/regenerator-runtime not in flight; fetching
+444 verbose get https://registry.npmjs.org/regenerator-runtime not expired, no request
+445 silly addNameRange number 2 { name: 'regenerator-runtime',
+445 silly addNameRange   range: '>=0.13.4 <0.14.0',
+445 silly addNameRange   hasData: true }
+446 silly addNameRange versions [ 'regenerator-runtime',
+446 silly addNameRange   [ '0.9.0',
+446 silly addNameRange     '0.9.1',
+446 silly addNameRange     '0.9.2',
+446 silly addNameRange     '0.9.3',
+446 silly addNameRange     '0.9.4',
+446 silly addNameRange     '0.9.5',
+446 silly addNameRange     '0.9.6',
+446 silly addNameRange     '0.10.0',
+446 silly addNameRange     '0.10.1',
+446 silly addNameRange     '0.10.2',
+446 silly addNameRange     '0.10.3',
+446 silly addNameRange     '0.10.4',
+446 silly addNameRange     '0.10.5',
+446 silly addNameRange     '0.11.0',
+446 silly addNameRange     '0.11.1',
+446 silly addNameRange     '0.12.0',
+446 silly addNameRange     '0.12.1',
+446 silly addNameRange     '0.13.0',
+446 silly addNameRange     '0.13.1',
+446 silly addNameRange     '0.13.2',
+446 silly addNameRange     '0.13.3',
+446 silly addNameRange     '0.13.4',
+446 silly addNameRange     '0.13.5',
+446 silly addNameRange     '0.13.6',
+446 silly addNameRange     '0.13.7',
+446 silly addNameRange     '0.13.8',
+446 silly addNameRange     '0.13.9' ] ]
+447 silly addNamed regenerator-runtime@0.13.9
+448 verbose addNamed "0.13.9" is a plain semver version for regenerator-runtime
+449 silly cache afterAdd regenerator-runtime@0.13.9
+450 verbose afterAdd /root/.npm/regenerator-runtime/0.13.9/package/package.json not in flight; writing
+451 verbose afterAdd /root/.npm/regenerator-runtime/0.13.9/package/package.json written
+452 silly fetchNamedPackageData @emotion/memoize
+453 silly mapToRegistry name @emotion/memoize
+454 silly mapToRegistry scope (from package name) @emotion
+455 verbose mapToRegistry no registry URL found in name for scope @emotion
+456 silly mapToRegistry using default registry
+457 silly mapToRegistry registry https://registry.npmjs.org/
+458 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2fmemoize
+459 silly fetchNamedPackageData stylis
+460 silly mapToRegistry name stylis
+461 silly mapToRegistry using default registry
+462 silly mapToRegistry registry https://registry.npmjs.org/
+463 silly mapToRegistry uri https://registry.npmjs.org/stylis
+464 verbose request uri https://registry.npmjs.org/@emotion%2fmemoize
+465 verbose request no auth needed
+466 info attempt registry request try #1 at 1:46:26 PM
+467 verbose etag W/"df0b09d7844bfbede3dde23a413122e7"
+468 verbose lastModified Sat, 05 Dec 2020 23:22:25 GMT
+469 http request GET https://registry.npmjs.org/@emotion%2fmemoize
+470 verbose request uri https://registry.npmjs.org/stylis
+471 verbose request no auth needed
+472 info attempt registry request try #1 at 1:46:26 PM
+473 verbose etag W/"7dbefbc2a530bbcdef9a98e586cb9828"
+474 verbose lastModified Sat, 11 Dec 2021 14:13:54 GMT
+475 http request GET https://registry.npmjs.org/stylis
+476 http 304 https://registry.npmjs.org/@emotion%2fmemoize
+477 verbose headers { date: 'Thu, 20 Jan 2022 13:46:26 GMT',
+477 verbose headers   connection: 'keep-alive',
+477 verbose headers   'cf-ray': '6d08bfbd3e38a261-ICN',
+477 verbose headers   age: '70',
+477 verbose headers   'cache-control': 'public, max-age=300',
+477 verbose headers   etag: '"df0b09d7844bfbede3dde23a413122e7"',
+477 verbose headers   'last-modified': 'Sat, 05 Dec 2020 23:22:25 GMT',
+477 verbose headers   vary: 'Accept-Encoding',
+477 verbose headers   'cf-cache-status': 'HIT',
+477 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+477 verbose headers   server: 'cloudflare' }
+478 silly get cb [ 304,
+478 silly get   { date: 'Thu, 20 Jan 2022 13:46:26 GMT',
+478 silly get     connection: 'keep-alive',
+478 silly get     'cf-ray': '6d08bfbd3e38a261-ICN',
+478 silly get     age: '70',
+478 silly get     'cache-control': 'public, max-age=300',
+478 silly get     etag: '"df0b09d7844bfbede3dde23a413122e7"',
+478 silly get     'last-modified': 'Sat, 05 Dec 2020 23:22:25 GMT',
+478 silly get     vary: 'Accept-Encoding',
+478 silly get     'cf-cache-status': 'HIT',
+478 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+478 silly get     server: 'cloudflare' } ]
+479 verbose etag https://registry.npmjs.org/@emotion%2fmemoize from cache
+480 verbose get saving @emotion/memoize to /root/.npm/registry.npmjs.org/_40emotion_252fmemoize/.cache.json
+481 http 304 https://registry.npmjs.org/stylis
+482 verbose headers { date: 'Thu, 20 Jan 2022 13:46:26 GMT',
+482 verbose headers   connection: 'keep-alive',
+482 verbose headers   'cf-ray': '6d08bfbd6f65619a-ICN',
+482 verbose headers   age: '48',
+482 verbose headers   'cache-control': 'public, max-age=300',
+482 verbose headers   etag: '"7dbefbc2a530bbcdef9a98e586cb9828"',
+482 verbose headers   'last-modified': 'Sat, 11 Dec 2021 14:13:54 GMT',
+482 verbose headers   vary: 'Accept-Encoding',
+482 verbose headers   'cf-cache-status': 'HIT',
+482 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+482 verbose headers   'x-amz-replication-status': 'COMPLETED',
+482 verbose headers   server: 'cloudflare' }
+483 silly get cb [ 304,
+483 silly get   { date: 'Thu, 20 Jan 2022 13:46:26 GMT',
+483 silly get     connection: 'keep-alive',
+483 silly get     'cf-ray': '6d08bfbd6f65619a-ICN',
+483 silly get     age: '48',
+483 silly get     'cache-control': 'public, max-age=300',
+483 silly get     etag: '"7dbefbc2a530bbcdef9a98e586cb9828"',
+483 silly get     'last-modified': 'Sat, 11 Dec 2021 14:13:54 GMT',
+483 silly get     vary: 'Accept-Encoding',
+483 silly get     'cf-cache-status': 'HIT',
+483 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+483 silly get     'x-amz-replication-status': 'COMPLETED',
+483 silly get     server: 'cloudflare' } ]
+484 verbose etag https://registry.npmjs.org/stylis from cache
+485 verbose get saving stylis to /root/.npm/registry.npmjs.org/stylis/.cache.json
+486 silly resolveWithNewModule @emotion/memoize@0.7.5 checking installable status
+487 silly cache add args [ '@emotion/memoize@^0.7.4', null ]
+488 verbose cache add spec @emotion/memoize@^0.7.4
+489 silly cache add parsed spec Result {
+489 silly cache add   raw: '@emotion/memoize@^0.7.4',
+489 silly cache add   scope: '@emotion',
+489 silly cache add   name: '@emotion/memoize',
+489 silly cache add   rawSpec: '^0.7.4',
+489 silly cache add   spec: '>=0.7.4 <0.8.0',
+489 silly cache add   type: 'range' }
+490 silly addNamed @emotion/memoize@>=0.7.4 <0.8.0
+491 verbose addNamed ">=0.7.4 <0.8.0" is a valid semver range for @emotion/memoize
+492 silly addNameRange { name: '@emotion/memoize',
+492 silly addNameRange   range: '>=0.7.4 <0.8.0',
+492 silly addNameRange   hasData: false }
+493 silly mapToRegistry name @emotion/memoize
+494 silly mapToRegistry scope (from package name) @emotion
+495 verbose mapToRegistry no registry URL found in name for scope @emotion
+496 silly mapToRegistry using default registry
+497 silly mapToRegistry registry https://registry.npmjs.org/
+498 silly mapToRegistry uri https://registry.npmjs.org/@emotion%2fmemoize
+499 verbose addNameRange registry:https://registry.npmjs.org/@emotion%2fmemoize not in flight; fetching
+500 verbose stack Error: Missing required argument #1
+500 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+500 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+500 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+500 verbose stack     at /usr/share/npm/lib/install/deps.js:457:7
+500 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+500 verbose stack     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+500 verbose stack     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+500 verbose stack     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+500 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+500 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+501 verbose cwd /workspace/coder
+502 error Linux 4.4.0-1128-aws
+503 error argv "/usr/bin/node" "/usr/bin/npm" "install" "@mui/material" "@emotion/react" "@emotion/styled"
+504 error node v8.10.0
+505 error npm  v3.5.2
+506 error code EMISSINGARG
+507 error typeerror Error: Missing required argument #1
+507 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+507 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+507 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+507 error typeerror     at /usr/share/npm/lib/install/deps.js:457:7
+507 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+507 error typeerror     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+507 error typeerror     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+507 error typeerror     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+507 error typeerror     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+507 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+508 error typeerror This is an error with npm itself. Please report this error at:
+508 error typeerror     <http://github.com/npm/npm/issues>
+509 verbose exit [ 1, true ]
