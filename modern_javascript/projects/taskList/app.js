@@ -28,7 +28,7 @@ function getTask(e) {
         link.classList = 'delete-item secondary-content';
         link.innerHTML = '<i class="fa fa-remove"></i>';
         // append button to list item
-        li.appendChild(link); 
+        li.appendChild(link);
         // append list item to the list
         taskList.appendChild(li);
     })
@@ -69,14 +69,31 @@ function storeTaskLS(li) {
 function deleteTask(e) {
     if (e.target.parentElement.classList.contains('delete-item')) {
         taskList.removeChild(e.target.parentElement.parentElement);
+        removeTaskLS(e.target.parentElement.parentElement);
     }
     e.preventDefault();
+}
+
+function removeTaskLS(taskItem) {
+    console.log(taskItem.textContent);
+    let tasks;
+    if ((tasks = JSON.parse(localStorage.getItem('tasks'))) === null) {
+        tasks = []
+    } 
+    console.log(tasks)
+    tasks.forEach(function(task, index) {
+        if (taskItem.textContent === task) {
+            tasks.splice(index, 1);
+        }
+    })
+    localStorage.setItem('tasks', JSON.stringify(tasks));
 }
 
 function clearTask(e) {
     while (taskList.firstChild) {
         taskList.removeChild(taskList.firstChild);
     }
+    localStorage.clear();
     e.preventDefault();
 }
 
