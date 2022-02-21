@@ -9,11 +9,12 @@ function searchUser(e) {
             console.log(data);
             if (data.profile.message !== 'Not Found') {
                 ui.showProfile(data.profile);
+                ui.showRepos(data.repos);
             } else {
-                // Show Profile
+                ui.showAlert('User Not Found.', 'alert alert-dismissable alert-primary');
             }
         })
     } else {
-        // Clear profile
+        ui.clearProfile();
     } 
 }
