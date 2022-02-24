@@ -29,4 +29,4 @@ class Weather {
 }
 
 const weather = new Weather;
-weather.getWeather('test');
+weather.getWeather();
