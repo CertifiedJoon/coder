@@ -11,12 +11,41 @@
     <title>User Validation</title>
   </head>
   <body>
-    <h1>User Form</h1>
-        <div class="container"></div>
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6 mx-auto">
+                  <h1>User Form</h1>
+                  <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Name">
+                            <div class="invalid-feedback">Name must be betwen 2 and 10 characters</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="zipcode">ZipCode</label>
+                            <input type="text" class="form-control" id="zipcode" placeholder="ZipCode">
+                            <div class="invalid-feedback">Enter a valid zipcode</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" id="email" placeholder="Email">
+                            <div class="invalid-feedback">Enter a valid Email.</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="phone" placeholder="Phone Number without -">
+                            <div class="invalid-feedback">Enter a valid Phone Number.</div>
+                        </div>
+                        <input type="submit" class="btn btn-primary btn-block">
+                    </form>
+                </div>
+            </div>
+        </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
   </body>
 </html>
