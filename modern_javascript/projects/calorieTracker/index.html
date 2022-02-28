@@ -36,12 +36,12 @@
                             <label for="item-name">Meal</label>
                         </div>
                         <div class="input-field col s6">
-                            <input type="text" placeholder="Add Calories" id="item-calories">
+                            <input type="number" placeholder="Add Calories" id="item-calories">
                             <label for="item-calories">Calories</label>
                         </div>
                         <button class="add-btn btn blue darken-3"><i class="fa fa-plus"></i> Add Meal</button>
-                        <!-- <button class="update-btn btn orange"><i class="fa fa-pencil-square-o"></i> Update Meal</button>
-                        <button class="delete-btn btn red"><i class="fa fa-remove"></i> Delete Meal</button> -->
+                        <button class="update-btn btn orange"><i class="fa fa-pencil-square-o"></i> Update Meal</button>
+                        <button class="delete-btn btn red"><i class="fa fa-remove"></i> Delete Meal</button>
                         <button class="back-btn btn grey pull-right"><i class="fa fa-chevron-circle-left"></i> Back Meal</button>
                     </div>
                 </form>
@@ -51,26 +51,7 @@
         <!-- Calories Count -->
         <h3 class="center-align">Total Calories <span class="total-calories">0</span></h3>
 
-        <ul id="item-list" class="collection">
-            <li class="collection-item" id="item-0">
-                <strong>Streak Dinner: </strong> <em>1200 Kcal</em>
-                <a href="#" class="secondary-content">
-                    <i class="fa fa-pencil"></i>
-                </a>
-            </li>
-            <li class="collection-item" id="item-0">
-                <strong>Cookie: </strong> <em>400 Kcal</em>
-                <a href="#" class="secondary-content">
-                    <i class="fa fa-pencil"></i>
-                </a>
-            </li>
-            <li class="collection-item" id="item-0">
-                <strong>Lemonade: </strong> <em>100 Kcal</em>
-                <a href="#" class="secondary-content">
-                    <i class="fa fa-pencil"></i>
-                </a>
-            </li>
-        </ul>
+        <ul id="item-list" class="collection"></ul>
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
