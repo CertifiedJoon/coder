@@ -1,25 +1,31 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
-import { toast } from 'react-toastify';
-import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  updateProfile,
+} from 'firebase/auth';
+import { db } from '../firebase.config';
+import { setDoc, doc, serverTimestamp } from 'firebase/firestore';
 import { ReactComponent as ArrowRightIcon } from '../assets/svg/keyboardArrowRightIcon.svg';
 import visibilityIcon from '../assets/svg/visibilityIcon.svg';
 
-function SignIn() {
+function SignUp() {
   const [showPassword, setShowPassword] = useState(false);
   const [formData, setFormData] = useState({
+    name: '',
     email: '',
     password: '',
   });
-  const { email, password } = formData;
+  const { name, email, password } = formData;
 
   const navigate = useNavigate();
 
   const handleChange = (e) => {
-    setFormData({
-      ...formData,
+    setFormData((prevState) => ({
+      ...prevState,
       [e.target.id]: e.target.value,
-    });
+    }));
   };
 
   const handleSubmit = async (e) => {
@@ -27,16 +33,26 @@ function SignIn() {
 
     try {
       const auth = getAuth();
-      const userCredential = await signInWithEmailAndPassword(
+      const userCredential = await createUserWithEmailAndPassword(
         auth,
         email,
         password
       );
-      if (userCredential.user) {
-        navigate('/');
-      }
+      const user = userCredential.user;
+      updateProfile(auth.currentUser, {
+        displayName: name,
+      });
+
+      // store in firestore
+      const formDataCopy = { ...formData };
+      delete formDataCopy.password;
+      formDataCopy.timestamp = serverTimestamp();
+      console.log(formDataCopy);
+      await setDoc(doc(db, 'users', user.uid), formDataCopy);
+
+      navigate('/sign-in');
     } catch (err) {
-      toast.error('Wrong Credentials Bitch');
+      console.log(err);
     }
   };
 
@@ -44,10 +60,18 @@ function SignIn() {
     <>
       <div className="page-container">
         <header>
-          <p className="pageHeader">Welcome Back</p>
+          <p className="pageHeader">Sign Up</p>
         </header>
 
         <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            placeholder="Name"
+            id="name"
+            value={name}
+            onChange={handleChange}
+            className="nameInput"
+          />
           <input
             type="email"
             placeholder="E-mail"
@@ -74,23 +98,20 @@ function SignIn() {
               className="showPassword"
             />
           </div>
-          <Link to="/forgot-password" className="forgotPasswordLink">
-            Forgot Password
-          </Link>
-          <div className="siginInBar">
-            <p className="signInText">Sign In</p>
-            <button type="submit" className="signInButton">
+          <div className="siginUpBar">
+            <p className="signUpText">Sign Up</p>
+            <button type="submit" className="signUpButton">
               <ArrowRightIcon fill="#ffffff" width="34px" height="34px" />
             </button>
           </div>
         </form>
         {/* Google Oauth */}
-        <Link to="/sign-up" className="registerLink">
-          Sign Up Instead
+        <Link to="/sign-in" className="registerLink">
+          Sign In
         </Link>
       </div>
     </>
   );
 }
 
-export default SignIn;
+export default SignUp;
